@@ -63,7 +63,6 @@ layout: default
   <article class="post">
 
     <div class="post__content">
-	 {% include ads-artikel.html %}
       {{ content }}
     </div>
 
