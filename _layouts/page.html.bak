@@ -21,7 +21,7 @@ layout: default
       {%if page.image %}
       <div class="col col-12">
         <div class="page-image">
-          <img class="lazy" data-src="{{site.url}}{{page.image}}" alt="{{page.title}}">
+          <img class="lazy" data-src="{{site.baseurl}}{{page.image}}" alt="{{page.title}}">
         </div>
       </div>
       {% endif %}
@@ -59,7 +59,7 @@ layout: default
           <div class="section__info">
             <div class="section__head">
               <h2 class="section__title">Recent Posts</h2>
-              <a class="section__link" href="{{site.url}}/">Back to homepage</a>
+              <a class="section__link" href="{{site.baseurl}}/">Back to homepage</a>
             </div>
           </div>
         </div>
