@@ -2,8 +2,8 @@
 # Site Settings
 title: BukuKelas.Com
 logo: # You can add own logo. For example '/images/logo.png'.
-description: Menca personal blogging theme for Jekyll
-baseurl: "/" # the subpath of your site, e.g. /blog
+description: BukuKelas.com sarana berbagi informasi tentang dunia Pendidikan termasuk didalamnya buku, teori, materi, soal, dan lain-lain. 
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bukukelas.com" # the base hostname & protocol for your site, e.g. http://example.com
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
@@ -40,8 +40,8 @@ social:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Hey, I’m Wahyu243
-  hero__description: Designs, talks, and writes about web, ethics, privacy, and dev. I share design tutorials, free resources and inspiration.
+  hero__title: BukuKelas.Com
+  hero__description: BukuKelas.com sarana berbagi informasi tentang dunia Pendidikan termasuk didalamnya buku, teori, materi, soal, dan lain-lain.
   hero__image: '/images/01.jpg'
 
 
@@ -82,7 +82,7 @@ gallery:
 #-------------------------------
 # Contact Settings
 contact:
-  email: your@email.com # Add your email for contant form
+  email: wahyu243@gmail.com # Add your email for contant form
   description: Menso comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want. # Add a description of your form
 
 # NOTE
@@ -91,7 +91,7 @@ contact:
 
 #-------------------------------
 # Comment Section (Disqus)
-disqus-identifier: demo-menca # Add your shortname for Disqus Comment. For example demo-menca
+disqus-identifier: bukukelas # Add your shortname for Disqus Comment. For example demo-menca
 
 
 #-------------------------------
@@ -116,7 +116,195 @@ defaults:
       path: '_pages'
     values:
       permalink: /:basename:output_ext
-
+- scope:
+    path: _pages
+    type: pages
+  values:
+    layout: page
+    image: twitter-card.png
+    author: wahyu
+    avatar: /img/you.jpg
+    toc: true
+- scope:
+    path: _pages/kontributor
+    type: pages
+  values:
+    layout: kontributor
+    image: twitter-card.png
+    author: wahyu
+    avatar: /img/you.jpg
+- scope:
+    path: _posts
+    type: posts
+  values:
+    layout: post
+    image: twitter-card.png
+    author: wahyu
+    avatar: /img/you.jpg
+    toc: true
+- scope:
+    path: _posts/buku
+    type: posts
+  values:
+    layout: post
+    category: buku
+    csymb: bse
+    permalink: "/bse/:title"
+    image: twitter-card.png
+    author: wahyu
+    avatar: /img/you.jpg
+    read_time: true
+    comments: true
+    support: true
+    breadcrumbs:
+      - label: "BSE"
+        url: /bse
+- scope:
+    path: _posts/soal
+    type: posts
+  values:
+    layout: post
+    category: soal
+    csymb: soal
+    permalink: "/soal/:title"
+    image: twitter-card.png
+    author: wahyu
+    avatar: /img/you.jpg
+    read_time: true
+    comments: true
+    support: true
+    breadcrumbs:
+      - label: "Soal"
+        url: /soal
+- scope:
+    path: _posts/artikel
+    type: posts
+  values:
+    layout: post
+    category: artikel
+    csymb: artikel
+    image: twitter-card.png
+    author: wahyu
+    avatar: /img/you.jpg
+    read_time: true
+    comments: true
+    support: true
+    breadcrumbs:
+      - label: "Artikel"
+        url: /artikel
+- scope:
+    path: _posts/berita
+    type: posts
+  values:
+    layout: post
+    category: berita
+    csymb: berita
+    image: twitter-card.png
+    author: wahyu
+    avatar: /img/you.jpg
+    read_time: true
+    comments: true
+    support: true
+    breadcrumbs:
+      - label: "Berita"
+        url: /berita
+- scope:
+    path: _posts/administrasi
+    type: posts
+  values:
+    layout: post
+    permalink: "/adm/:title"
+    category: administrasi
+    csymb: adm
+    image: twitter-card.png
+    author: wahyu
+    avatar: /img/you.jpg
+    read_time: true
+    comments: true
+    support: true
+    breadcrumbs:
+      - label: "Administrasi"
+        url: /adm
+- scope:
+    path: _posts/tutorial
+    type: posts
+  values:
+    layout: post
+    category: tutorial
+    csymb: tutorial
+    image: twitter-card.png
+    author: wahyu
+    avatar: /img/you.jpg
+    read_time: true
+    comments: true
+    support: true
+    breadcrumbs:
+      - label: "Tutorial"
+        url: /tutorial
+- scope:
+    path: _posts/teori
+    type: posts
+  values:
+    layout: post
+    category: teori
+    csymb: teori
+    image: twitter-card.png
+    author: wahyu
+    avatar: /img/you.jpg
+    read_time: true
+    comments: true
+    support: true
+    breadcrumbs:
+      - label: "Teori"
+        url: /teori/
+- scope:
+    path: _posts/dongeng
+    type: posts
+  values:
+    layout: post
+    category: dongeng
+    csymb: dongeng
+    image: twitter-card.png
+    author: wahyu
+    avatar: /img/you.jpg
+    read_time: true
+    comments: true
+    support: true
+    breadcrumbs:
+      - label: "Dongeng"
+        url: /dongeng/
+- scope:
+    path: _posts/infografis
+    type: posts
+  values:
+    layout: post
+    category: infografis
+    csymb: infografis
+    image: twitter-card.png
+    author: wahyu
+    avatar: /img/you.jpg
+    read_time: true
+    comments: true
+    support: true
+    breadcrumbs:
+      - label: "Infografis"
+        url: /infografis/
+- scope:
+    path: _posts/video
+    type: posts
+  values:
+    layout: post
+    category: video
+    csymb: video
+    image: twitter-card.png
+    author: wahyu
+    avatar: /img/you.jpg
+    read_time: true
+    comments: true
+    support: true
+    breadcrumbs:
+      - label: "Video"
+        url: /video/
 
 include:
   - _pages
@@ -124,3 +312,29 @@ include:
 sass:
   sass_dir: _sass
   style: compressed
+  
+toc:
+  min_level: 1
+  max_level: 10
+  ordered_list: false
+  no_toc_section_class: 'toc-l'
+  list_class: t-o-c
+  sublist_class: 'toc-p'
+  item_class: 'toc-p'
+  item_prefix: 'toc-p'
+  
+ampdir: amp
+
+pagination:
+  enabled: true
+  per_page: 14
+  permalink: '/page/:num/'
+  title: 'Halaman :num dari :max - :title '
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail: 
+    before: 2 # The number of links before the current page
+    after: 2  # The number of links after the current page
+  indexpage: 'index'
+

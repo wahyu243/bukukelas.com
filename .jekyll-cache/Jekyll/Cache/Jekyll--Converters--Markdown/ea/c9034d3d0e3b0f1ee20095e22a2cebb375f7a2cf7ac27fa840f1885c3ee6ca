@@ -1,0 +1,73 @@
+I"“<h2 id="mari-kita-mulai-membuat-blog-jekyll">Mari kita mulai membuat blog Jekyll.</h2>
+<p>Saya asumsikan anda sudah memiliki akun Github.</p>
+
+<h3 id="kenapa-memilih-github">Kenapa Memilih Github</h3>
+<ol>
+  <li>Hosting di Github benar-benar gratis, cocok bagi kita yang memiliki budget paspasan hanya bermodalkan domain yang kita miliki. Bila anda tidak memiliki domain, anda masih bisa membuat blog dengan url bawaan dari github pages anda.</li>
+  <li>Blog yang dihosting diGithub Pages sangat cepat jika dibandingkan dengan CMS lainnya. Inilah alasan mengapa saya memindahkan semua blog saya ke Jekyll (platform blogging di Github).</li>
+  <li>Tidak ada database atau eksekusi back-end di halaman Github. Jadi kemungkinan situs web diretas adalah nol.</li>
+  <li>Memiliki sedikit kesabaran untuk memahami cara kerjanya. Banyak sekali (setidaknya dalam kasus saya), pertama kali saya kesulitan dan tutorial-tutorial yang ada semuanya dalam bahasa inggris sehingga menyulitkan bagi orang seperti saya yang bahasa inggrisnya pas-pasan.</li>
+</ol>
+
+<h3 id="langkah-pertama-mencari-themetema-blog-jekyll">Langkah Pertama Mencari Theme/Tema Blog Jekyll</h3>
+<p>Sebuah tema penting untuk blog yang bagus. Jika tidak, Anda dapat menggunakan tema dasar Jekyll jika Anda ingin mendesain semuanya sendiri. Tetapi jika Anda mencari tata letak pra-desain maka Anda harus mencari Jekyll Themes. Anda akan menemukan banyak tema tetapi, yang saya sarankan untuk mengunjungi https://theme.administrasi.net dan pilih tema gratis.</p>
+
+<p><img src="http://localhost:4000/https://bukukelas.com/img/memilih%20tema%20lagi.png" alt="Memilih Tema" /></p>
+
+<p>Pilih Tema kemudian klik repositori</p>
+
+<h3 id="langkah-kedua-fork-repositori">Langkah Kedua Fork Repositori</h3>
+<p>Pertama pilih tema kemudian fork repositori tema yang anda pilih (anda sudah login di github).</p>
+
+<p><img src="http://localhost:4000/https://bukukelas.com/img/fork.png" alt="Copy Repositori" /></p>
+
+<p>Dengan melakukan fork terhadap repositori berarti anda menyalin seluruh repositori sebagai repositori baru di dalam akun Github Anda. Anda dapat mengganti nama repositori menjadi apa pun yang Anda suka di opsi Pengaturan</p>
+
+<h3 id="langkah-ketiga-periksa-branch-sumber-dipilih">Langkah Ketiga Periksa Branch Sumber Dipilih</h3>
+<p>Setelah menyalin repositori tema, buka pengaturan dan temukan bagian Github Pages. Di sini Anda harus memilih cabang mana yang ingin Anda gunakan sebagai sumber situs web.</p>
+
+<p><img src="http://localhost:4000/https://bukukelas.com/img/memilih%20branch.png" alt="Memilih Branch" /></p>
+
+<h3 id="langkah-keempat-menambahkan-custom-domain">Langkah Keempat Menambahkan Custom Domain</h3>
+<h4 id="cara-pertama">Cara Pertama</h4>
+<p>Sekarang, arahkan ke repositori dan periksa apakah ada file CNAME di dalamnya. CNAME digunakan untuk domain khusus.</p>
+
+<p>Jika ada, hapus URL di dalamnya dan ubah dengan custom domain milik anda.</p>
+
+<p>Blog Anda seharusnya sudah aktif dan berjalan sekarang. Tetapi berikan waktu. Maksimal 10 menit. Jekyll membangun sebuah blog statis sementara itu.</p>
+
+<h4 id="cara-kedua">Cara Kedua</h4>
+<p>Selain cara di atas anda juga bisa menambahkan custom domain yang anda miliki pada kolom seperti gambar di bawah ini.</p>
+
+<p><img src="http://localhost:4000/https://bukukelas.com/img/custom%20domain%20demo.png" alt="Custom Domain" /></p>
+
+<p>Apabila kolom tersebut tidak ada silahkan anda klik pilih tema dan pilih tema apa saja, kemudian kembali ke halaman pengaturan dan isikan custom domain pada kolom tersebut.</p>
+
+<h2 id="konfigurasi">Konfigurasi</h2>
+<p>Edit konfigurasi pada file <code>_config.yml</code> umumnya akan terlihat seperti ini:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>title: Demo # Judul Blog Anda
+author: Username Github Anda
+email: email-anda@domain.com
+description: Deskripsi Blog anda.
+baseurl: /blog # isi sesuaikan dengan kebutuhan anda contohnya /blog
+url: https://theme.administrasi.net # Url Blog Anda, e.g. http://example.com
+twitter_username: administrasi.net # ganti username twitter anda
+github_username:  administrasi.net # ganti dengan username github anda
+instagram_username: administrasi.net # ganti dengan username instragram
+social:
+  name: Nama Anda
+  links:
+    - https://twitter.com/administrasi.net
+    - https://www.facebook.com/administrasi.net
+    - https://www.linkedin.com/in/administrasi.net
+	- https://plus.google.com/+administrasi.net
+ 	- https://github.com/administrasi.net
+   	- https://keybase.io/administrasi.net
+disqus:
+  shortname: administrasi.net # to enable comments replace with your_disqus_shortname
+</code></pre></div></div>
+
+<p>Setelah menyelesaikan langkah-langkah di atas silahkan cek hasilnya.</p>
+
+:ET
